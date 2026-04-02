@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Map4dMapAccessKey</key>
-	<string>d9f5568c4c512c562cf0cf9f8ff487ec</string>
+	<string>YOUR_ACCESS_KEY</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

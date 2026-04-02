@@ -5,7 +5,7 @@ import 'package:map4d_map/map4d_map.dart';
 import 'page.dart';
 
 class Map4dApp extends Map4dMapExampleAppPage {
-  Map4dApp() : super(const Icon(Icons.map), 'Map4dMap SDK');
+  Map4dApp() : super(const Icon(Icons.map), 'Basic Map');
 
   @override
   Widget build(BuildContext context) {

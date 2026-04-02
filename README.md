@@ -6,15 +6,6 @@
 
 A Flutter plugin that provides a [Map4dMap](https://map4d.vn/) widget.
 
-## Usage
-
-To use this plugin, add `map4d_map` as a dependency in your `pubspec.yaml` file.
-
-```yaml
-dependencies:
-  map4d_map: ^3.0.3
-```
-
 ## Minium Android/iOS SDK version support
 
 ### Android
