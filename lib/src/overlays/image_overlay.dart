@@ -1,5 +1,4 @@
 import 'package:flutter/foundation.dart';
-import 'package:map4d_map/map4d_map.dart';
 import 'package:meta/meta.dart' show immutable;
 
 import 'overlays.dart';
