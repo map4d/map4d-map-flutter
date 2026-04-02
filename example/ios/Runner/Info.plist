@@ -47,5 +47,9 @@
 	<string></string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Show your location on the map</string>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
 </dict>
 </plist>
