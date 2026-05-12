@@ -1,10 +1,8 @@
 # Map4dMap for Flutter
-[![map4d](https://img.shields.io/badge/map4d-map-orange)](https://map4d.vn/)
 [![platform](https://img.shields.io/badge/platform-flutter-45d2fd.svg)](https://flutter.dev/)
-[![pub package](https://img.shields.io/pub/v/map4d_map.svg)](https://pub.dev/packages/map4d_map)
-[![github issues](https://img.shields.io/github/issues/map4d/map4d-map-flutter)](https://github.com/map4d/map4d-map-flutter/issues)
+[![pub package](https://img.shields.io/pub/v/map4d_map_dtqg.svg)](https://pub.dev/packages/map4d_map_dtqg)
 
-A Flutter plugin that provides a [Map4dMap](https://map4d.vn/) widget.
+A Flutter plugin that provides a [Map4dMap DTQG](https://map4d.vn/) widget.
 
 ## Minium Android/iOS SDK version support
 
@@ -26,11 +24,9 @@ android {
 
 Required iOS 12.0 or higher
 
-## Setup API key
+## Require API key
 
 The API key is a unique identifier that authenticates requests associated with your project for usage and billing purposes. You must have at least one API key associated with your project.
-
-Get an API key at <https://map.map4d.vn/developer/key>
 
 ### Android
 
@@ -59,7 +55,7 @@ Provide access key from `ios/Runner/Info.plist`
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:map4d_map/map4d_map.dart';
+import 'package:map4d_map_dtqg/map4d_map.dart';
 
 void main() {
   runApp(MyApp());
@@ -71,16 +67,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Map4D Map',
+      title: 'Map4D DTQG Map',
       home: MFMapView(),
     );
   }
 }
 ```
 
-See [example](https://github.com/map4d/map4d-map-flutter/tree/master/example) directory for more examples
-
 ## Documents
 
-- Guides: <https://docs.map4d.vn/map4d-map/flutter/>
-- API Reference: <https://pub.dev/documentation/map4d_map/latest/>
+- API Reference: <https://pub.dev/documentation/map4d_map_dtqg/latest/>

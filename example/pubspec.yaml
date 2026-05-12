@@ -13,7 +13,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  map4d_map:
+  map4d_map_dtqg:
     # When depending on this package from a real application you should use:
     #   map4d_map: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints
