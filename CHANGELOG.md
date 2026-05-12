@@ -1,5 +1,9 @@
 ## Next
 
+## 3.1.0
+
+* Upgrade Map4dMap SDK
+
 ## 3.0.3
 
 * [Android] Remove deprecated source for Android Platform
