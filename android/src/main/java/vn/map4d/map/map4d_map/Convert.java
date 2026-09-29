@@ -475,6 +475,10 @@ class Convert {
     if (width != null) {
       sink.setWidth(toInt(width));
     }
+    final Object outlineWidth = data.get("activeOutlineWidth");
+    if (outlineWidth != null) {
+      sink.setOutlineWidth(toInt(outlineWidth));
+    }
     final Object paths = data.get("routes");
     if (paths != null) {
       sink.setPaths(toHoles(paths));
