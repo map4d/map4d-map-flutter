@@ -75,6 +75,11 @@ class FMFDirectionsRendererController implements FMFDirectionsRendererOptionsSin
   }
 
   @Override
+  public void setOutlineWidth(float outlineWidth) {
+    directionsRenderer.setOutlineWidth(outlineWidth);
+  }
+
+  @Override
   public void setStartLocation(MFLocationCoordinate location) {
     directionsRenderer.setStartLocation(location);
   }

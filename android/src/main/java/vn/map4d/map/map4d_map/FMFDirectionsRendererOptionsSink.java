@@ -26,6 +26,8 @@ interface FMFDirectionsRendererOptionsSink {
 
   void setWidth(float width);
 
+  void setOutlineWidth(float outlineWidth);
+
   void setStartLocation(MFLocationCoordinate location);
 
   void setStartIcon(MFBitmapDescriptor iconDescriptor);

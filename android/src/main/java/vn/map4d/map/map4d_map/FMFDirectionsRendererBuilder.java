@@ -72,6 +72,11 @@ class FMFDirectionsRendererBuilder implements FMFDirectionsRendererOptionsSink {
   }
 
   @Override
+  public void setOutlineWidth(float outlineWidth) {
+    directionsRendererOptions.outlineWidth(outlineWidth);
+  }
+
+  @Override
   public void setStartLocation(MFLocationCoordinate location) {
     directionsRendererOptions.startLocation(location);
   }
