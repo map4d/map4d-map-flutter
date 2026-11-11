@@ -270,7 +270,6 @@ class _MFMapViewState extends State<MFMapView> {
   }
 
   void onPOITap(MFPOIId poiId) {
-    assert(poiId != null);
     final MFPOI? poi = _pois[poiId];
     if (poi == null) {
       throw UnknownMapObjectIdError('poi', poiId, 'onTap');
@@ -282,7 +281,6 @@ class _MFMapViewState extends State<MFMapView> {
   }
 
   void onBuildingTap(MFBuildingId buildingId) {
-    assert(buildingId != null);
     final MFBuilding? building = _buildings[buildingId];
     if (building == null) {
       throw UnknownMapObjectIdError('building', buildingId, 'onTap');
@@ -294,7 +292,6 @@ class _MFMapViewState extends State<MFMapView> {
   }
 
   void onPolylineTap(MFPolylineId polylineId) {
-    assert(polylineId != null);
     final MFPolyline? polyline = _polylines[polylineId];
     if (polyline == null) {
       throw UnknownMapObjectIdError('polyline', polylineId, 'onTap');
@@ -306,7 +303,6 @@ class _MFMapViewState extends State<MFMapView> {
   }
 
   void onPolygonTap(MFPolygonId polygonId) {
-    assert(polygonId != null);
     final MFPolygon? polygon = _polygons[polygonId];
     if (polygon == null) {
       throw UnknownMapObjectIdError('polygon', polygonId, 'onTap');
@@ -318,7 +314,6 @@ class _MFMapViewState extends State<MFMapView> {
   }
 
   void onCircleTap(MFCircleId circleId) {
-    assert(circleId != null);
     final MFCircle? circle = _circles[circleId];
     if (circle == null) {
       throw UnknownMapObjectIdError('circle', circleId, 'onTap');

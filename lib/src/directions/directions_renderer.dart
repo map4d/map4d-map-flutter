@@ -171,7 +171,7 @@ class MFDirectionsRenderer implements MapsObject {
     addIfPresent('originPOIOptions', originPOIOptions.toJson());
     addIfPresent('destinationPOIOptions', destinationPOIOptions.toJson());
 
-    if (routes != null && routes.length > 0) {
+    if (routes.isNotEmpty) {
       json['routes'] = _routesToJson();
     }
 

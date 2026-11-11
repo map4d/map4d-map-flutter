@@ -8,9 +8,7 @@ import 'package:meta/meta.dart' show immutable;
 @immutable
 class MapsObjectId<T> {
   /// Creates an immutable object representing a [T] among [Map4dMap] Ts.
-  ///
-  /// An [AssertionError] will be thrown if [value] is null.
-  const MapsObjectId(this.value) : assert(value != null);
+  const MapsObjectId(this.value);
 
   /// The value of the id.
   final String value;

@@ -136,9 +136,7 @@ class MFPolyline implements MapsObject {
     addIfPresent('width', width);
     addIfPresent('zIndex', zIndex);
 
-    if (points != null) {
-      json['points'] = _pointsToJson();
-    }
+    json['points'] = _pointsToJson();
 
     return json;
   }
