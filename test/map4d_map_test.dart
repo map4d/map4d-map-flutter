@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:smartpolice_maps/map4d_map.dart';
+import 'package:smartpolice_maps/smartpolice_maps.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('map4d_map');

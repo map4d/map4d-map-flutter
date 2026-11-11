@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smartpolice_maps/map4d_map.dart';
+import 'package:smartpolice_maps/smartpolice_maps.dart';
 import 'page.dart';
 
 class DirectionsRendererPage extends Map4dMapExampleAppPage {

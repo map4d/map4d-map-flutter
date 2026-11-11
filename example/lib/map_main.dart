@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:smartpolice_maps/map4d_map.dart';
+import 'package:smartpolice_maps/smartpolice_maps.dart';
 import 'page.dart';
 
 class Map4dApp extends Map4dMapExampleAppPage {

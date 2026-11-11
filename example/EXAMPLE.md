@@ -3,7 +3,7 @@
 ```dart
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:smartpolice_maps/map4d_map.dart';
+import 'package:smartpolice_maps/smartpolice_maps.dart';
 
 void main() {
   runApp(MyApp());
