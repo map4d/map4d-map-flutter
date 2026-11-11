@@ -21,7 +21,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  bool _isMapCreated = false;
   late MFMapViewController _controller;
 
   @override
@@ -105,7 +104,6 @@ class _MyAppState extends State<MyApp> {
     print('onMapCreated');
     setState(() {
       _controller = controller;
-      _isMapCreated = true;
     });
   }
 

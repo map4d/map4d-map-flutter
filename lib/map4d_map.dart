@@ -1,7 +1,6 @@
 library map4d_map;
 
 import 'dart:async';
-import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
@@ -9,11 +8,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'src/ui.dart';
-import 'src/location.dart';
 import 'src/screen_coordinate.dart';
 import 'src/data_source_feature.dart';
 import 'src/camera.dart';
-import 'src/callbacks.dart';
 import 'src/annotations/annotations.dart';
 import 'src/overlays/overlays.dart';
 import 'src/directions/directions.dart';

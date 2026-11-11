@@ -39,7 +39,6 @@ class MapUiBodyState extends State<MapUiBody> {
   bool _buildingsEnabled = true;
   bool _myLocationEnabled = false;
   bool _myLocationButtonEnabled = false;
-  late MFMapViewController _controller;
 
   @override
   void initState() {
@@ -49,17 +48,6 @@ class MapUiBodyState extends State<MapUiBody> {
   @override
   void dispose() {
     super.dispose();
-  }
-
-  Widget _fitBoundsToggler() {
-    return TextButton(
-      child: Text('Fit Bounds'),
-      onPressed: () {
-        setState(() {
-          print('_fitBoundsToggler');
-        });
-      },
-    );
   }
 
   Widget _zoomBoundsToggler() {
@@ -267,7 +255,6 @@ class MapUiBodyState extends State<MapUiBody> {
 
   void onMapCreated(MFMapViewController controller) {
     setState(() {
-      _controller = controller;
       _isMapCreated = true;
     });
   }

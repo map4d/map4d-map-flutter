@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:map4d_map/map4d_map.dart';
 
@@ -157,8 +156,6 @@ class PlacePolylineBodyState extends State<PlacePolylineBody> {
 
   @override
   Widget build(BuildContext context) {
-    final bool isIOS = !kIsWeb && defaultTargetPlatform == TargetPlatform.iOS;
-
     final MFPolylineId? selectedId = selectedPolyline;
 
     return Column(

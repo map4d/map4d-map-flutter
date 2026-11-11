@@ -20,7 +20,6 @@ class DirectionsRendererBody extends StatefulWidget {
 }
 
 class DirectionsRendererBodyState extends State<DirectionsRendererBody> {
-  MFMapViewController? _controller;
   MFDirectionsRenderer? _directionsRenderer;
   MFBitmap? _originIcon;
   MFBitmap? _destinationIcon;
@@ -46,10 +45,6 @@ class DirectionsRendererBodyState extends State<DirectionsRendererBody> {
       _destinationIcon = await MFBitmap.fromAssetImage(
           imageConfiguration, 'assets/map-marker-2.png');
     }
-  }
-
-  void _onMapCreated(MFMapViewController controller) {
-    this._controller = controller;
   }
 
   void _onTapped(int routeIndex) {
@@ -132,7 +127,6 @@ class DirectionsRendererBodyState extends State<DirectionsRendererBody> {
                 zoom: 16.0,
               ),
               directionsRenderers: renderers,
-              onMapCreated: _onMapCreated,
             ),
           ),
         ),
