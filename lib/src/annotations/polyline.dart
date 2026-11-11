@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart' show listEquals, VoidCallback;
 import 'package:flutter/material.dart' show Color, Colors;
 import 'package:meta/meta.dart' show immutable;
 
+import '../utils/color.dart';
 import 'annotations.dart';
 
 /// Uniquely identifies a [MFPolyline] among [MFMapView] polylines.
@@ -130,7 +131,7 @@ class MFPolyline implements MapsObject {
 
     addIfPresent('polylineId', polylineId.value);
     addIfPresent('consumeTapEvents', consumeTapEvents);
-    addIfPresent('color', color.value);
+    addIfPresent('color', colorToArgb32(color));
     addIfPresent('style', style.value);
     addIfPresent('visible', visible);
     addIfPresent('width', width);

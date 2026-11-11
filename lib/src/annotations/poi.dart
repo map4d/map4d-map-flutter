@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart' show VoidCallback;
 import 'package:flutter/material.dart' show Color, Colors;
 import 'package:meta/meta.dart' show immutable;
 
+import '../utils/color.dart';
 import 'annotations.dart';
 
 /// Uniquely identifies a [MFPOI] among [Map4dMap] pois.
@@ -118,7 +119,7 @@ class MFPOI implements MapsObject<MFPOI> {
     addIfPresent('consumeTapEvents', consumeTapEvents);
     addIfPresent('position', position.toJson());
     addIfPresent('title', title);
-    addIfPresent('titleColor', titleColor.value);
+    addIfPresent('titleColor', colorToArgb32(titleColor));
     // addIfPresent('subtitle', subtitle);
     addIfPresent('icon', icon.toJson());
     addIfPresent('type', type);

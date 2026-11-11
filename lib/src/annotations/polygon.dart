@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart' show listEquals, VoidCallback;
 import 'package:flutter/material.dart' show Color, Colors;
 import 'package:meta/meta.dart' show immutable;
 
+import '../utils/color.dart';
 import 'annotations.dart';
 
 /// Uniquely identifies a [MFPolygon] among [MFMapView] polygons.
@@ -129,8 +130,8 @@ class MFPolygon implements MapsObject {
 
     addIfPresent('polygonId', polygonId.value);
     addIfPresent('consumeTapEvents', consumeTapEvents);
-    addIfPresent('fillColor', fillColor.value);
-    addIfPresent('strokeColor', strokeColor.value);
+    addIfPresent('fillColor', colorToArgb32(fillColor));
+    addIfPresent('strokeColor', colorToArgb32(strokeColor));
     addIfPresent('strokeWidth', strokeWidth);
     addIfPresent('visible', visible);
     addIfPresent('zIndex', zIndex);

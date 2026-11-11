@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart' show VoidCallback;
 import 'package:flutter/material.dart' show Color, Colors;
 import 'package:meta/meta.dart' show immutable;
 
+import '../utils/color.dart';
 import 'annotations.dart';
 
 /// Uniquely identifies a [MFCircle] among [Map4dMap] circles.
@@ -115,10 +116,10 @@ class MFCircle implements MapsObject<MFCircle> {
 
     addIfPresent('circleId', circleId.value);
     addIfPresent('consumeTapEvents', consumeTapEvents);
-    addIfPresent('fillColor', fillColor.value);
+    addIfPresent('fillColor', colorToArgb32(fillColor));
     addIfPresent('center', center.toJson());
     addIfPresent('radius', radius);
-    addIfPresent('strokeColor', strokeColor.value);
+    addIfPresent('strokeColor', colorToArgb32(strokeColor));
     addIfPresent('strokeWidth', strokeWidth);
     addIfPresent('visible', visible);
     addIfPresent('zIndex', zIndex);
