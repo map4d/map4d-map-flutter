@@ -14,6 +14,7 @@ Icon?
 profile
 xcuserdata
 **/.generated/
+Runner.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
 Flutter/App.framework
 Flutter/Flutter.framework
 Flutter/Flutter.podspec

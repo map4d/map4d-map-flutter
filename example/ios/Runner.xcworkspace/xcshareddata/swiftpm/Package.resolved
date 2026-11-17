@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "map4d-map-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/map4d/map4d-map-ios-sdk.git",
+      "state" : {
+        "revision" : "009c51c77b7872bab188bb29b7834c6d354dee8b",
+        "version" : "3.3.8"
+      }
+    }
+  ],
+  "version" : 2
+}
