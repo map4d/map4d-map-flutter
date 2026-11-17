@@ -2,6 +2,22 @@
 
 Demonstrates how to use the map4d_map plugin.
 
+## Build for iOS
+
+The example enables Swift Package Manager and targets iOS 15. If you previously built it with CocoaPods, move any generated `ios/Podfile` and `ios/Podfile.lock` out of the example before building with SwiftPM.
+
+From this directory, build for a device without signing:
+
+```sh
+mise exec -- flutter build ios --no-codesign
+```
+
+With Xcode 27.2, use Flutter 3.47.9 for a simulator build. Flutter 3.41.0 fails when checking both simulator architectures with `lipo`.
+
+```sh
+mise exec flutter@3.47.9 -- flutter build ios --simulator
+```
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
