@@ -11,14 +11,14 @@ Pod::Spec.new do |s|
   s.source           = { :path => 'https://github.com/map4d/map4d-map-flutter' }
 
   s.static_framework = true
-  s.platform         = :ios, '12.0'
+  s.platform         = :ios, '13.0'
 
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 
-  s.source_files        = 'Classes/**/*'
-  s.public_header_files = 'Classes/**/*.h'
+  s.source_files        = 'map4d_map/Sources/map4d_map/**/*.{h,m}'
+  s.public_header_files = 'map4d_map/Sources/map4d_map/include/**/*.h'
 
   s.dependency 'Flutter'
-  s.dependency 'Map4dMap', '~> 3.3'
+  s.dependency 'Map4dMap', '~> 3.3', '>= 3.3.8'
 end
