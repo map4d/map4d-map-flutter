@@ -12,10 +12,10 @@ From this directory, build for a device without signing:
 mise exec -- flutter build ios --no-codesign
 ```
 
-With Xcode 27.2, use Flutter 3.47.9 for a simulator build. Flutter 3.41.0 fails when checking both simulator architectures with `lipo`.
+Flutter 3.44.8 includes the `lipo` fix needed for simulator builds with Xcode 27.2. Build with the version pinned in `mise.toml`:
 
 ```sh
-mise exec flutter@3.47.9 -- flutter build ios --simulator
+mise exec -- flutter build ios --simulator
 ```
 
 ## Getting Started
