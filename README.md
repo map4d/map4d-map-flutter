@@ -4,7 +4,7 @@
 [![pub package](https://img.shields.io/pub/v/map4d_map.svg)](https://pub.dev/packages/map4d_map)
 [![github issues](https://img.shields.io/github/issues/map4d/map4d-map-flutter)](https://github.com/map4d/map4d-map-flutter/issues)
 
-A Flutter plugin that provides a [Map4dMap](https://map4d.vn/) widget.
+A Flutter plugin that provides a [Map4dMap](https://map4d.vn/) widget. It requires Flutter 3.41.0 and Dart 3.11.0 or later.
 
 ## Minium Android/iOS SDK version support
 
@@ -24,7 +24,9 @@ android {
 
 ### iOS
 
-Required iOS 12.0 or higher
+Requires iOS 13.0 or later. The plugin installs Map4D Map iOS SDK 3.3.8 or later through Swift Package Manager or CocoaPods.
+
+Swift Package Manager is enabled by default in Flutter 3.44 and later. On Flutter 3.41, enable it with `flutter config --enable-swift-package-manager`, then build the app to migrate its Xcode project. See the [Flutter SwiftPM integration guide](https://docs.flutter.dev/packages-and-plugins/swift-package-manager/for-app-developers).
 
 ## Setup API key
 
