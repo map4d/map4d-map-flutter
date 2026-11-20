@@ -24,7 +24,7 @@ android {
 
 ### iOS
 
-Requires iOS 13.0 or later. The plugin installs Map4D Map iOS SDK 3.3.8 or later through Swift Package Manager or CocoaPods.
+Requires iOS 13.0 or later. The plugin installs Map4D Map iOS SDK 3.4.0 or later through Swift Package Manager or CocoaPods.
 
 Swift Package Manager is enabled by default. Build the app to migrate its Xcode project. See the [Flutter SwiftPM integration guide](https://docs.flutter.dev/packages-and-plugins/swift-package-manager/for-app-developers).
 

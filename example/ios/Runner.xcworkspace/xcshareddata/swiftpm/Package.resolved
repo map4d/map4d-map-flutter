@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/map4d/map4d-map-ios-sdk.git",
       "state" : {
-        "revision" : "009c51c77b7872bab188bb29b7834c6d354dee8b",
-        "version" : "3.3.8"
+        "revision" : "25a20007657fc9f2acd711764b5e4f2451d3591d",
+        "version" : "3.4.0"
       }
     }
   ],

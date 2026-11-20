@@ -9,7 +9,7 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "FlutterFramework", path: "../FlutterFramework"),
-        .package(url: "https://github.com/map4d/map4d-map-ios-sdk.git", from: "3.3.8"),
+        .package(url: "https://github.com/map4d/map4d-map-ios-sdk.git", from: "3.4.0"),
     ],
     targets: [
         .target(

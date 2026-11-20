@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
   s.public_header_files = 'map4d_map/Sources/map4d_map/include/**/*.h'
 
   s.dependency 'Flutter'
-  s.dependency 'Map4dMap', '~> 3.3', '>= 3.3.8'
+  s.dependency 'Map4dMap', '~> 3.4'
 end
