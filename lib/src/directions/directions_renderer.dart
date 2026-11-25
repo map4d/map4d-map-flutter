@@ -2,7 +2,6 @@ import 'package:collection/collection.dart';
 import 'package:flutter/material.dart' show Color, Colors;
 import 'package:meta/meta.dart' show immutable;
 
-import '../utils/color.dart';
 import 'directions.dart';
 
 /// Uniquely identifies a [MFDirectionsRenderer] among [MFMapView] directions renderer.
@@ -162,13 +161,13 @@ class MFDirectionsRenderer implements MapsObject {
     addIfPresent('directions', directions);
     addIfPresent('activedIndex', activedIndex);
     addIfPresent('activeStrokeWidth', activeStrokeWidth);
-    addIfPresent('activeStrokeColor', colorToArgb32(activeStrokeColor));
+    addIfPresent('activeStrokeColor', activeStrokeColor.toARGB32());
     addIfPresent('activeOutlineWidth', activeOutlineWidth);
-    addIfPresent('activeOutlineColor', colorToArgb32(activeOutlineColor));
+    addIfPresent('activeOutlineColor', activeOutlineColor.toARGB32());
     addIfPresent('inactiveStrokeWidth', inactiveStrokeWidth);
-    addIfPresent('inactiveStrokeColor', colorToArgb32(inactiveStrokeColor));
+    addIfPresent('inactiveStrokeColor', inactiveStrokeColor.toARGB32());
     addIfPresent('inactiveOutlineWidth', inactiveOutlineWidth);
-    addIfPresent('inactiveOutlineColor', colorToArgb32(inactiveOutlineColor));
+    addIfPresent('inactiveOutlineColor', inactiveOutlineColor.toARGB32());
     addIfPresent('originPOIOptions', originPOIOptions.toJson());
     addIfPresent('destinationPOIOptions', destinationPOIOptions.toJson());
 

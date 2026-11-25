@@ -1,7 +1,6 @@
 import 'dart:ui' show Color;
 import '../location.dart';
 import '../utils/bitmap.dart';
-import '../utils/color.dart';
 
 class MFDirectionsPOIOptions {
   const MFDirectionsPOIOptions({
@@ -44,7 +43,7 @@ class MFDirectionsPOIOptions {
     }
 
     if (titleColor != null) {
-      json['titleColor'] = colorToArgb32(titleColor!);
+      json['titleColor'] = titleColor!.toARGB32();
     }
 
     json['visible'] = visible;
