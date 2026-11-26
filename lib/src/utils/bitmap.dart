@@ -2,7 +2,7 @@ import 'dart:async' show Future;
 import 'dart:typed_data' show Uint8List;
 import 'dart:ui' show Size;
 
-import 'package:flutter/material.dart'
+import 'package:flutter/painting.dart'
     show ImageConfiguration, AssetImage, AssetBundleImageKey;
 import 'package:flutter/services.dart' show AssetBundle;
 import 'package:flutter/foundation.dart' show kIsWeb;

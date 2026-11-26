@@ -1,5 +1,6 @@
+import 'dart:ui' show Color;
+
 import 'package:collection/collection.dart';
-import 'package:flutter/material.dart' show Color, Colors;
 import 'package:meta/meta.dart' show immutable;
 
 import 'directions.dart';
@@ -23,11 +24,11 @@ class MFDirectionsRenderer implements MapsObject {
     this.directions = "",
     this.activedIndex = 0,
     this.activeStrokeWidth = 8,
-    this.activeStrokeColor = Colors.blue,
+    this.activeStrokeColor = const Color(0xFF2196F3),
     this.activeOutlineWidth = 2,
     this.activeOutlineColor = const Color(0xFF0D47A1),
     this.inactiveStrokeWidth = 8,
-    this.inactiveStrokeColor = Colors.blueGrey,
+    this.inactiveStrokeColor = const Color(0xFF607D8B),
     this.inactiveOutlineWidth = 1,
     this.inactiveOutlineColor = const Color(0xFF263238),
     this.originPOIOptions = const MFDirectionsPOIOptions(),

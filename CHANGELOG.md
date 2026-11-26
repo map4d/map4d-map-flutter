@@ -1,5 +1,7 @@
 ## Next
 
+* Remove Material imports from the plugin and use core Flutter libraries.
+
 ## 3.2.0
 
 * [iOS] Add Swift Package Manager support

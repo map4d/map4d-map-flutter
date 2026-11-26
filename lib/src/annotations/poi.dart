@@ -1,5 +1,6 @@
+import 'dart:ui' show Color;
+
 import 'package:flutter/foundation.dart' show VoidCallback;
-import 'package:flutter/material.dart' show Color, Colors;
 import 'package:meta/meta.dart' show immutable;
 
 import 'annotations.dart';
@@ -22,7 +23,7 @@ class MFPOI implements MapsObject<MFPOI> {
       this.consumeTapEvents = false,
       this.position = const MFLatLng(0.0, 0.0),
       this.title = '',
-      this.titleColor = Colors.blue,
+      this.titleColor = const Color(0xFF2196F3),
       // this.subtitle = '',
       this.icon = MFBitmap.defaultIcon,
       this.type = 'point',

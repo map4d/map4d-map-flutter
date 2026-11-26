@@ -1,5 +1,6 @@
+import 'dart:ui' show Color;
+
 import 'package:flutter/foundation.dart' show VoidCallback;
-import 'package:flutter/material.dart' show Color, Colors;
 import 'package:meta/meta.dart' show immutable;
 
 import 'annotations.dart';
@@ -20,10 +21,10 @@ class MFCircle implements MapsObject<MFCircle> {
   const MFCircle({
     required this.circleId,
     this.consumeTapEvents = false,
-    this.fillColor = Colors.transparent,
+    this.fillColor = const Color(0x00000000),
     this.center = const MFLatLng(0.0, 0.0),
     this.radius = 0,
-    this.strokeColor = Colors.black,
+    this.strokeColor = const Color(0xFF000000),
     this.strokeWidth = 10,
     this.visible = true,
     this.zIndex = 0,

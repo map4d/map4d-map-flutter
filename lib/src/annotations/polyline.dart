@@ -1,5 +1,6 @@
+import 'dart:ui' show Color;
+
 import 'package:flutter/foundation.dart' show listEquals, VoidCallback;
-import 'package:flutter/material.dart' show Color, Colors;
 import 'package:meta/meta.dart' show immutable;
 
 import 'annotations.dart';
@@ -34,7 +35,7 @@ class MFPolyline implements MapsObject {
   const MFPolyline({
     required this.polylineId,
     this.consumeTapEvents = false,
-    this.color = Colors.black,
+    this.color = const Color(0xFF000000),
     this.style = MFPolylineStyle.solid,
     this.points = const <MFLatLng>[],
     this.visible = true,
