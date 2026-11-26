@@ -4,13 +4,16 @@
 [![pub package](https://img.shields.io/pub/v/map4d_map.svg)](https://pub.dev/packages/map4d_map)
 [![github issues](https://img.shields.io/github/issues/map4d/map4d-map-flutter)](https://github.com/map4d/map4d-map-flutter/issues)
 
-A Flutter plugin that provides a [Map4dMap](https://map4d.vn/) widget. It requires Flutter 3.44.8 and Dart 3.12.0 or later.
+A Flutter plugin that provides a [Map4dMap](https://map4d.vn/) widget.
 
-## Minium Android/iOS SDK version support
+## Requires
+
+- Flutter 3.44.8 and Dart 3.12.0 or later.
+- Map4d Access Key, get at <https://map.map4d.vn/developer/key>
 
 ### Android
 
-Required Android SDK 21 or higher
+- Android SDK 21 or higher
 
 Set `minSdkVersion` in `android/app/build.gradle`
 
@@ -24,7 +27,7 @@ android {
 
 ### iOS
 
-Requires iOS 13.0 or later. The plugin installs Map4D Map iOS SDK 3.4.0 or later through Swift Package Manager or CocoaPods.
+- iOS 13.0 or later
 
 Swift Package Manager is enabled by default. Build the app to migrate its Xcode project. See the [Flutter SwiftPM integration guide](https://docs.flutter.dev/packages-and-plugins/swift-package-manager/for-app-developers).
 
@@ -48,6 +51,8 @@ Provide access key from `android/app/src/main/AndroidManifest.xml`
 </manifest>
 ```
 
+- *Replace `YOUR_KEY_HERE` by your access key*
+
 ### iOS
 
 Provide access key from `ios/Runner/Info.plist`
@@ -56,6 +61,7 @@ Provide access key from `ios/Runner/Info.plist`
 <key>Map4dMapAccessKey</key>
 <string>YOUR_KEY_HERE</string>
 ```
+- *Replace `YOUR_KEY_HERE` by your access key*
 
 ## Simple Usage
 

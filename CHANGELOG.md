@@ -1,6 +1,8 @@
 ## Next
 
-* Add Swift Package Manager support on iOS and require Map4D Map iOS SDK 3.4.0 or later.
+## 3.2.0
+
+* [iOS] Add Swift Package Manager support
 * Require Flutter 3.44.8, Dart 3.12.0, and iOS 13.0 or later.
 
 ## 3.1.0
